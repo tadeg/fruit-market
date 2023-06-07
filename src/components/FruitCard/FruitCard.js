@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components';
-import GrapesPhoto from "../../img/grapes.jpg";
 
 
 const FruitDiv = styled.div`
@@ -47,7 +46,7 @@ const FruitContent = styled.div`
 
 const FruitImage = styled.img`
     width: 100%;
-    // height: 30px;
+    height: 10rem;;
 `;
 
 
@@ -61,8 +60,8 @@ const FruitCard = (props) => {
                     </FruitHeading>
                     <FruitContent>
                         Lorem ipsum dolor sit
-                        <FruitImage src={GrapesPhoto} />
-                        <button>New advertisement</button>
+                        <FruitImage src={props.fruitphoto} />
+                        {/* <button>New advertisement</button> */}
                         <button>View advertisements</button>
                     </FruitContent>      
                 </FruitDiv> 
