@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+
+:root {
+  --color-scheme-first: rgb(75, 0, 130);
+  --color-scheme-first: rgb(255, 218, 207);
+  --color-scheme-first: rgb(223, 223, 223);
+  --color-scheme-second: rgb(164, 65, 85);
+}
+
+html {
+  /* font-family: 'Archivo', sans-serif; */
+  /* font-family: 'Anybody', sans-serif; */
+  /* font-family: 'Karla', sans-serif; */
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}

@@ -1,0 +1,121 @@
+footer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(41, 41, 68); */
+    /* background-color: rgb(75, 74, 74); */
+}
+
+footer p.footlogo {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10rem;
+    font-weight: 100;
+    color: #fff;
+}
+
+footer p.notes {
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    padding: 20px;
+    margin-bottom: 2vh;
+    border-left: 5px solid white;
+    font-family: 'Antic', sans-serif;
+    font-size: 1.8rem;
+    color: white;
+}
+
+footer .contact {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    padding: 1.5rem 2% 0 11%;
+    margin-bottom: 3vh;
+    border-top: 1px solid #999;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+footer .contactchannel {
+    font-size: 3.2rem;
+    color: #999;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+footer .contactchannel i:hover {
+    color: #fff;
+}
+
+footer .contactchannel a {
+    color: #999;
+}
+
+footer .contactchannel a:visited {
+    color: #999;
+}
+
+
+/* ---------- break points for desktop ---------- */
+
+@media (max-width: 1440px) {
+
+    footer p.footlogo {
+        font-size: 6rem;
+    }
+
+    footer p.notes {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    footer .contactchannel {
+        font-size: 2.5rem;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+
+}
+
+
+
+/* ---------- Responsive: break points for mobile ----------*/
+
+@media (max-width: 1024px) {
+
+    footer .contact {
+        border-top: none;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 800px) {}
+
+@media (max-width: 600px) {
+
+    footer p.footlogo {
+        font-size: 5rem;
+    }
+
+    footer p.notes {
+        margin-bottom: 1.5vh;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    footer .contact {
+        margin-bottom: 1vh;
+    }
+
+}
+
+@media (max-width: 400px) {}
+
+
+@media (max-width: 400px) and (orientation: portrait) {}
