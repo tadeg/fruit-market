@@ -1,17 +1,28 @@
 {
   "files": {
     "main.css": "/fruit-market/static/css/main.c52bb8cb.css",
-    "main.js": "/fruit-market/static/js/main.2fdbed56.js",
+    "main.js": "/fruit-market/static/js/main.953e4748.js",
     "static/js/787.82a396b8.chunk.js": "/fruit-market/static/js/787.82a396b8.chunk.js",
     "static/media/main-bg.jpg": "/fruit-market/static/media/main-bg.6ce1f044a5ad708aacca.jpg",
+    "static/media/kiwi.jpg": "/fruit-market/static/media/kiwi.a1edcf992d06a47c6ae9.jpg",
+    "static/media/melon.jpg": "/fruit-market/static/media/melon.91332916bc55260a67b7.jpg",
+    "static/media/watermelon.jpg": "/fruit-market/static/media/watermelon.3feb12828eaed39a5c02.jpg",
+    "static/media/nectarine.jpg": "/fruit-market/static/media/nectarine.d905600cfb0d63079907.jpg",
     "static/media/grapes.jpg": "/fruit-market/static/media/grapes.a07755e76205e0d89e05.jpg",
+    "static/media/blueberry.jpg": "/fruit-market/static/media/blueberry.226a0231d64e6fbf8673.jpg",
+    "static/media/mango.jpg": "/fruit-market/static/media/mango.82549f5cab695d9ebb97.jpg",
+    "static/media/grapefruit.jpg": "/fruit-market/static/media/grapefruit.a2f770750273ea1bf3d6.jpg",
+    "static/media/lemon.jpg": "/fruit-market/static/media/lemon.edb1479835c1f90fa397.jpg",
+    "static/media/apple.jpg": "/fruit-market/static/media/apple.138161c8a7382a6259cf.jpg",
+    "static/media/orange.jpg": "/fruit-market/static/media/orange.3bd7d42a1396cc5f8c9f.jpg",
+    "static/media/apricot.jpg": "/fruit-market/static/media/apricot.600bd7ca3cbfb08c95c3.jpg",
     "index.html": "/fruit-market/index.html",
     "main.c52bb8cb.css.map": "/fruit-market/static/css/main.c52bb8cb.css.map",
-    "main.2fdbed56.js.map": "/fruit-market/static/js/main.2fdbed56.js.map",
+    "main.953e4748.js.map": "/fruit-market/static/js/main.953e4748.js.map",
     "787.82a396b8.chunk.js.map": "/fruit-market/static/js/787.82a396b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c52bb8cb.css",
-    "static/js/main.2fdbed56.js"
+    "static/js/main.953e4748.js"
   ]
 }
