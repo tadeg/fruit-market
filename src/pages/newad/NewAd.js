@@ -1,7 +1,9 @@
 import React, { useState, createContext, useContext } from "react";
 import styled from 'styled-components';
 import BurgerMenuAd from "../../components/BurgerMenuAd/BurgerMenuAd";
-
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import ClockOnSite from "../../components/ClockOnSite/ClockOnSite";
 
 
 const ContainterDiv = styled.div`
@@ -65,19 +67,6 @@ const StyleTitle = styled.p`
         };  
     `;
 
-    // const inputStyle = {
-    //     width: '40vw',
-    //     marginBottom: '1rem',
-    //     padding: '1rem 5rem',
-    //     borderRadius: '2rem',
-    //     backgroundColor: 'transparent',
-    //     border: '0.1rem solid #fff',
-    //     color: '#fff',
-    //     letterSpacing: '0.2rem',
-    //     fontSize: '1.5rem',
-    // }
-
-
         const SummaryWrapper = styled.section`
             width: 100vw;
             height: 30vh;
@@ -92,10 +81,33 @@ const StyleTitle = styled.p`
             @media (max-width: 500px) {
                 font-size: 2rem;
             }
-          
         `
 
+        const StyleDatePicker = styled.div` 
+            width: 40vw;
+            margin-bottom: 1rem;
+            padding: 1rem 5rem;
+            border-radius: 2rem;
+            background-color: transparent;
+            border: 0.1rem solid #fff;
+            color: #fff;
+            letter-spacing: 0.2rem;
+            font-size: 1.3rem;
+            &::placeholder {
+                color: #444;
+            };  
+    `;
+
+
+
+
 const AdContext = createContext();
+// RACZEJ KOLEJNOŚC PODSTAWOWA, up-down, tak jak w przykładzie z Counter
+// ALBO I NIE - zaczelo dzialac 
+// ??
+// ALE JESLI ZAPIS, i wysiwetlanie listy to z useReducer, choc tu tez nie ma wyswietlania listy
+// Raczej wyglada na to, ze nie da sie wyswietlac odrebnie listy bez backendu i zapisu do db
+// Zostaje chyba tylko trick z button Submit - alert(to be built)
 
 
 const Advertisement = () => {
@@ -130,11 +142,16 @@ const Advertisement = () => {
 
 const NewAd = () => {
 
+
     const value = useContext(AdContext);
 
     const submitAdd = () => {
     alert('Hello! Backend part of this website to be built 🔧 📝 😎 ')
     }
+
+    const [startDate, setStartDate] = useState(new Date());
+
+
 
         return(
 
@@ -142,6 +159,7 @@ const NewAd = () => {
             <ContainterDiv>
                 
                 <BurgerMenuAd/>
+                <ClockOnSite/>
 
                 <StyleTitle>
                 <p>New advertisement</p>
@@ -151,12 +169,24 @@ const NewAd = () => {
                     <StyleInput type="text" placeholder="Enter Fruit ..." onChange={e => value.setFruit(e.target.value)} />
                     <StyleInput type="text" placeholder="Enter amouth in kg ..."  onChange={e => value.setAmouth(e.target.value)} />
                     <StyleInput type="text" placeholder="Enter price per kg ..." onChange={e => value.setPrice(e.target.value)} />
-                    <StyleInput type="text" placeholder="Valid until ..." onChange={e => value.setPrice(e.target.value)} />
+                    {/* <StyleInput type="text" placeholder="Valid until ..." onChange={e => value.setPrice(e.target.value)} /> */}
+
+                    <StyleDatePicker>
+                    Valid until ...
+                    <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+                    </StyleDatePicker>
+                    
+                    
                     {/* <StyleInput type="reset" value="Clear data" /> */}
                     {/* <StyleInput type="submit" value="Submit this advertisement!"></StyleInput> */}
+              
+              
                 </StyleForm>
 
                 <StyleButton onClick={submitAdd}>Submit this advertisement!</StyleButton>
+
+        
+        
 
        
          
