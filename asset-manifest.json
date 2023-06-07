@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/fruit-market/static/css/main.02755d29.css",
-    "main.js": "/fruit-market/static/js/main.d4e4d5b8.js",
+    "main.css": "/fruit-market/static/css/main.c52bb8cb.css",
+    "main.js": "/fruit-market/static/js/main.2fdbed56.js",
     "static/js/787.82a396b8.chunk.js": "/fruit-market/static/js/787.82a396b8.chunk.js",
     "static/media/main-bg.jpg": "/fruit-market/static/media/main-bg.6ce1f044a5ad708aacca.jpg",
     "static/media/grapes.jpg": "/fruit-market/static/media/grapes.a07755e76205e0d89e05.jpg",
     "index.html": "/fruit-market/index.html",
-    "main.02755d29.css.map": "/fruit-market/static/css/main.02755d29.css.map",
-    "main.d4e4d5b8.js.map": "/fruit-market/static/js/main.d4e4d5b8.js.map",
+    "main.c52bb8cb.css.map": "/fruit-market/static/css/main.c52bb8cb.css.map",
+    "main.2fdbed56.js.map": "/fruit-market/static/js/main.2fdbed56.js.map",
     "787.82a396b8.chunk.js.map": "/fruit-market/static/js/787.82a396b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02755d29.css",
-    "static/js/main.d4e4d5b8.js"
+    "static/css/main.c52bb8cb.css",
+    "static/js/main.2fdbed56.js"
   ]
 }
