@@ -11,6 +11,9 @@ const HeaderDiv = styled.div`
     background-repeat: no-repeat;
     width: 100vw;
     height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 const SiteTitleDiv = styled.div`
