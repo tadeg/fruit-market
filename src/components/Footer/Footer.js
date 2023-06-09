@@ -9,7 +9,7 @@ import '../../css/Footer.css';
     <div>
 
         <footer>
-            <p className="footlogo">naturalstrength</p>
+            <p className="footlogo">naturalstrength!</p>
             <div className="contact">
                 <a href="#none" className="contactchannel"><i className="fa-solid fa-square-phone" title="Phone: +48 50X 0XX XYZ"></i></a>
                 <a href="mailto:tadoe@tadoe.pl" className="contactchannel"><i className="fa-solid fa-square-envelope" title="Mail to: tadoe@tadoe.pl"></i></a>
