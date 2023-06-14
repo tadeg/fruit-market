@@ -7,10 +7,10 @@ import {
 import { loginService } from "../services/http/loginService";
 import { messageActions } from "./messageActions";
 
-const loginSuccess = user => {
+const loginSuccess = merchant => {
     return {
         type: LOGIN_SUCCESS,
-        user
+        merchant
     };
 };
 
@@ -21,10 +21,10 @@ const loginFailure = error => {
     };
 };
 
-const loginRequest = user => {
+const loginRequest = merchant => {
     return {
         type: LOGIN_REQUEST,
-        user
+        merchant
     };
 };
 
@@ -34,9 +34,9 @@ const login = (username, password) => {
     return async dispatch => {
         dispatch(loginRequest());
         await loginService.login(username, password).then(
-            user => {
-                localStorage.setItem("account", JSON.stringify(user));
-                dispatch(loginSuccess(user));
+            merchant => {
+                localStorage.setItem("account", JSON.stringify(merchant));
+                dispatch(loginSuccess(merchant));
                 dispatch(messageActions.success("Logged in"));
 
             },
