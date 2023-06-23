@@ -8,14 +8,20 @@ const LoginStatusDisplay = (props) => {
     const { isLogged } = props;
     const user = localStorage.getItem("account");
 
+    const divStyles = {
+        marginTop: '80px',
+        fontSize: '2rem',
+        color: 'rgb(35, 142, 35)'
+    };
+
     if (user && isLogged ) {
         userDataToDisp = JSON.parse(JSON.parse(user).config.data).username;
     }
     
-    return 
-        <div>
-            {isLogged && <h5>Hello, {userDataToDisp}</h5>}
-        </div>;
+    return (
+        <div style={divStyles}>
+            {isLogged && <h5>Hello, {userDataToDisp}!</h5>}
+        </div>);
 };
 
 

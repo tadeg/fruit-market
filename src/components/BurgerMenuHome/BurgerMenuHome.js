@@ -58,8 +58,9 @@ constructor(props) {
         <aside className={this.state.menuStyles}>
             <ul>
                 <li className="menuitem"><Link to='/'>Homepage</Link></li>
-                <li className="menuitem"><Link to='/newmerchant'>Sign up as New Merchant</Link></li>
                 <li className="menuitem"><Link to='/newad'>New Advertisement</Link></li>
+                <li className="menuitem"><Link to='/login'>Log In</Link></li>
+                <li className="menuitem"><Link to='/newmerchant'>Sign up as New Merchant</Link></li>
                 {/* <li className="menuitem"><Link to='/viewads'>View Advertisements</Link></li> */}
             </ul>
         </aside>

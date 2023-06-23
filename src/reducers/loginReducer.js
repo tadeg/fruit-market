@@ -3,19 +3,27 @@ import {
     LOGIN_SUCCESS,
     LOGIN_FAILURE,
     LOGOUT
-} from "./loginActionsTypes";
+} from "../actions/loginActionsTypes";
 
 let merchant = undefined;
 
 merchant =
     localStorage.getItem("account") == undefined 
-        ? null 
-        : JSON.parse(localStorage.getItem("account"));
+    ? null 
+    : JSON.parse(localStorage.getItem("account"));
 
 
-const initialState = merchant
-    ? { isLogged: true, merchant: merchant, loginPending: false }
-    : { isLogged: false, merchant: null, loginPending: false };
+const initialState = merchant 
+    ? {
+        isLogged: true,
+        merchant: merchant,
+        loginPending: false
+    } 
+    : {
+        isLogged: false,
+        merchant: null,
+        loginPending: false
+    };
 
 
 const loginReducer = (state = initialState, action) => {
@@ -25,38 +33,33 @@ const loginReducer = (state = initialState, action) => {
         case LOGIN_REQUEST:
             return {
                 loginPending: true,
-                isLogged: false
+                    isLogged: false
             };
 
         case LOGIN_SUCCESS:
             return {
                 loginPending: false,
-                isLogged: true,
-                merchant: action.merchant
+                    isLogged: true,
+                    merchant: action.merchant
             };
 
         case LOGIN_FAILURE:
             return {
                 loginPending: false,
-                isLogged: false
-        };
+                    isLogged: false
+            };
 
         case LOGOUT:
             return {
                 isLogged: false,
-                merchant: null
+                    merchant: null
             };
 
         default:
             return state;
 
     }
-    
+
 };
 
 export default loginReducer;
-
-
-
-
-

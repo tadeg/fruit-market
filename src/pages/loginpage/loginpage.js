@@ -1,11 +1,20 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { loginActions } from "../..actions/loginActions";
+import { loginActions } from "../../actions/loginActions";
 import PropTypes from "prop-types";
+import styled from 'styled-components';
+
+import { LoginStatusDisplay } from "../../components/LoginStatusDisplay/LoginStatusDisplay";
+import BurgerMenuAd from "../../components/BurgerMenuAd/BurgerMenuAd";
+
+const loginpageDiv = styled.div`
+    width: 100%
+    height: 20vh;
+    background-color: red`;
 
 
-
-class Loginpage extends React {
+    
+class Loginpage extends Component {
 
     constructor(props) {
         super(props);
@@ -39,14 +48,24 @@ class Loginpage extends React {
     render() {
         const { loginPending, isLogged } = this.props;
         const { username, password, userNameError, passwordError } = this.state;
+        const divStyles = {
+            margin: '100px 20px',
+            fontSize: '1.5rem'
+        };
 
         return (
 
-            <div>
-                  
+            <loginpageDiv>
+             {/* <div> */}
+            
+             <BurgerMenuAd />
                         {!isLogged &&  (
-                            <div>
+                            <div style={divStyles}>
                                 <h2>Login</h2>
+                                <h3>Dev/tst info:</h3>
+                                <p>test username: janet.weaver@reqres.in</p>
+                                <p>test password: any password, not set</p>
+                                <p>login additional confirmation: browser dev tools\Application\Storage\Local Storage contains JWT token data</p>
                                 {loginPending && "Login in progress..."}
                                 {userNameError && (
                                     <div>
@@ -82,14 +101,16 @@ class Loginpage extends React {
                                     </div>
 
                                     <div>
-                                        <button>Log in</button>
+                                        <button>Log In</button>
                                     </div>
 
                                 </form>
+                        
                             </div>
                         )}
 
-            </div>        
+            {/* </div>   */}
+            </loginpageDiv>      
         );
     }
 
