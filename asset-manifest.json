@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fruit-market/static/css/main.c52bb8cb.css",
-    "main.js": "/fruit-market/static/js/main.6f49c7d3.js",
+    "main.js": "/fruit-market/static/js/main.0a9475de.js",
     "static/js/787.82a396b8.chunk.js": "/fruit-market/static/js/787.82a396b8.chunk.js",
     "static/media/main-bg.jpg": "/fruit-market/static/media/main-bg.6ce1f044a5ad708aacca.jpg",
     "static/media/kiwi.jpg": "/fruit-market/static/media/kiwi.a1edcf992d06a47c6ae9.jpg",
@@ -18,11 +18,11 @@
     "static/media/apricot.jpg": "/fruit-market/static/media/apricot.600bd7ca3cbfb08c95c3.jpg",
     "index.html": "/fruit-market/index.html",
     "main.c52bb8cb.css.map": "/fruit-market/static/css/main.c52bb8cb.css.map",
-    "main.6f49c7d3.js.map": "/fruit-market/static/js/main.6f49c7d3.js.map",
+    "main.0a9475de.js.map": "/fruit-market/static/js/main.0a9475de.js.map",
     "787.82a396b8.chunk.js.map": "/fruit-market/static/js/787.82a396b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c52bb8cb.css",
-    "static/js/main.6f49c7d3.js"
+    "static/js/main.0a9475de.js"
   ]
 }
