@@ -9,9 +9,12 @@ const LoginStatusDisplay = (props) => {
     const user = localStorage.getItem("account");
 
     const divStyles = {
-        marginTop: '80px',
-        fontSize: '2rem',
-        color: 'rgb(35, 142, 35)'
+        marginTop: '1vh',
+        fontSize: '1.5rem',
+        color: 'rgb(35, 142, 35)',
+        position: 'absolute',
+        top: '0',
+        left: '20vw'   
     };
 
     if (user && isLogged ) {

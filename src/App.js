@@ -19,6 +19,15 @@ class App extends Component {
   render() {
     const {message, type} = this.props;
 
+    const divAlertStyles = {
+      marginTop: '1vh',
+      fontSize: '1.5rem',
+      color: 'rgb(23, 40, 255)',
+      position: 'absolute',
+      top: '3vh',
+      left: '20vw'   
+  };
+
   return (
     <div className="App">
     <StyleRoot>
@@ -27,7 +36,7 @@ class App extends Component {
       <LoginStatusDisplay />
       <div>
         {message !== undefined && (
-          <div className={`message ${type}`}>
+          <div style={divAlertStyles} className={`message ${type}`}>
             {message}
           </div>
         )}

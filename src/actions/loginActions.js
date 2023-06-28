@@ -37,12 +37,12 @@ const login = (username, password) => {
             merchant => {
                 localStorage.setItem("account", JSON.stringify(merchant));
                 dispatch(loginSuccess(merchant));
-                dispatch(messageActions.success("Logged in"));
+                dispatch(messageActions.success("You're logged in!"));
 
             },
             error => {
                 dispatch(loginFailure(error));
-                dispatch(messageActions.error("Incorrect login or password"));               
+                dispatch(messageActions.error("Incorrect login or password!"));               
             }
         );
     };
