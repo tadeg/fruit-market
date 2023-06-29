@@ -102,7 +102,12 @@ const StyleTitle = styled.p`
 
 
 const AdContext = createContext();
-
+// RACZEJ KOLEJNOŚC PODSTAWOWA, up-down, tak jak w przykładzie z Counter
+// ALBO I NIE - zaczelo dzialac 
+// ??
+// ALE JESLI ZAPIS, i wysiwetlanie listy to z useReducer, choc tu tez nie ma wyswietlania listy
+// Raczej wyglada na to, ze nie da sie wyswietlac odrebnie listy bez backendu i zapisu do db
+// Zostaje chyba tylko trick z button Submit - alert(to be built)
 
 
 const Advertisement = () => {
@@ -121,7 +126,7 @@ const Advertisement = () => {
                     <SummaryWrapper>
                         <p style={{color: `#999`}}>Your entered advertisement data:</p>
                         <p>Fruit: {fruit} </p>
-                        <p>Amounth: {amouth} kg</p>
+                        <p>Amount: {amouth} kg</p>
                         <p>Price per kg: {price} PLN</p>
                         <p style={{color: `rgb(65, 105, 225)`}}>Total price: {amouth*price} PLN</p>
                     </SummaryWrapper>        
@@ -162,7 +167,7 @@ const NewAd = () => {
 
                 <StyleForm>
                     <StyleInput type="text" placeholder="Enter Fruit ..." onChange={e => value.setFruit(e.target.value)} />
-                    <StyleInput type="text" placeholder="Enter amouth in kg ..."  onChange={e => value.setAmouth(e.target.value)} />
+                    <StyleInput type="text" placeholder="Enter amount in kg ..."  onChange={e => value.setAmouth(e.target.value)} />
                     <StyleInput type="text" placeholder="Enter price per kg ..." onChange={e => value.setPrice(e.target.value)} />
                     {/* <StyleInput type="text" placeholder="Valid until ..." onChange={e => value.setPrice(e.target.value)} /> */}
 
