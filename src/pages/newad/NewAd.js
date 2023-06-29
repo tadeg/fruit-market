@@ -102,12 +102,7 @@ const StyleTitle = styled.p`
 
 
 const AdContext = createContext();
-// RACZEJ KOLEJNOŚC PODSTAWOWA, up-down, tak jak w przykładzie z Counter
-// ALBO I NIE - zaczelo dzialac 
-// ??
-// ALE JESLI ZAPIS, i wysiwetlanie listy to z useReducer, choc tu tez nie ma wyswietlania listy
-// Raczej wyglada na to, ze nie da sie wyswietlac odrebnie listy bez backendu i zapisu do db
-// Zostaje chyba tylko trick z button Submit - alert(to be built)
+
 
 
 const Advertisement = () => {
